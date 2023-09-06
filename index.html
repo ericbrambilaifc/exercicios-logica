@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+
+    <script>
+
+        function imprimir(algo) {
+            console.log(algo)
+            document.write(algo + "<br>")
+        }
+
+        function contar() {
+            var numeros = [];
+            var somaTodos = 0
+            var somaPares = 0
+            var somaImpares = 0
+            var quantidadePares = 0
+            var quantidadeImpares = 0
+
+            for (let index = 1; index < 6; index++) {
+                var numero = prompt('Diga 5 numeros');  //pergunta
+                numeros.push(numero); //adiciona    
+            }
+
+
+            // console.table                TABELA SCRATCH
+
+
+            for (let contador = 0; contador < numeros.length; contador++) {  //length = tamanho
+                const numero = parseInt(numeros[contador]);
+                imprimir(numero)
+                somaTodos = somaTodos + numero
+
+                if (numero % 2 == 0) { // SE CASO FOR PAR    
+                    somaPares = somaPares + numero
+                    quantidadePares++
+                } else {
+                    somaImpares = somaImpares + numero
+                    quantidadeImpares++
+                }
+            }
+
+            imprimir('soma de todos = ' + somaTodos)
+            imprimir('soma dos pares = ' + somaPares)
+            imprimir('soma dos impares = ' + somaImpares)
+            imprimir('quantidade dos pares = ' + quantidadePares)
+            imprimir('quatidade dos impares = ' + quantidadeImpares)
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <input type="submit" value="Enviar" onclick="contar()">
+</body>
+
+</html>
