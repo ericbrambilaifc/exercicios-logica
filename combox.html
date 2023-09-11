@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combox </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selecione uma Opção</h1>
+        <select id="minhaComBox" onchange="selecionarOpcao()">
+            <option value="vazio"></option>
+            <option value="opcao1">Atividade 01</option>
+            <option value="opcao2">Atividade 02</option>
+            <option value="opcao3">Atividade 03</option>
+            <option value="opcao4">Atividade 04</option>
+            <option value="opcao5">Atividade 05</option>
+            <option value="opcao6">Atividade 06</option>
+            <option value="opcao7">Atividade 07</option>
+            <option value="opcao8">Atividade 08</option>
+            <option value="opcao9">Atividade 09</option>
+            <option value="opcao10">Atividade 10</option>
+            <option value="opcao11">Atividade 11</option>
+            <option value="opcao12">Atividade 12</option>
+            <option value="opcao13">Atividade 13</option>
+        </select>
+
+        <script> 
+        
+        function imprimir(algo){    
+            console.log(algo)
+            document.write(algo + "<br>")
+        }
+
+        function atividade01(){   
+            let nome = prompt('qual seu nome?')
+            imprimir('Olá, ' + nome) 
+        }
+
+        function atividade02(){ 
+            let idade = [16]
+            
+            if(idade > 17) {    
+                document.write(idade + ' idade você é de maior')
+            }else document.write(idade + ' de menor')
+        }
+
+        function atividade03(){ 
+            let numero = prompt('digite um numero')
+
+                if (numero % 2 == 0) { // SE CASO FOR PAR    
+                    document.write(numero + ' é par')
+                } else {
+                    document.write(numero + ' é impar')
+                }
+            }
+
+        function atividade04(){    
+            var fruta = ["banana, maça, manga, melancia"]
+            for (let index = 0; index < fruta.length; index++) {
+                const fruta = fruta[index];
+                
+            }
+    }
+
+
+
+        function selecionarOpcao(){ 
+            const comBox = document.getElementById('minhaComBox');
+            const opcaoSelecionada = comBox.value;
+
+            switch (opcaoSelecionada) { 
+                case 'opcao1': 
+                    atividade01() // é uma função
+                    break; //pare esse script
+                
+                case 'opcao2': atividade02() 
+                break;
+                case 'opcao3': atividade03()
+                break;
+                case 'opcao4': atividade04()
+                break;
+                case 'opcao5': atividade05()
+                break;
+            }
+        }
+        
+        
+        
+        
+        </script>
+</body>
+</html>
