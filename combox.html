@@ -71,7 +71,52 @@
             imprimir( a + b) 
         }
 
+        function atividade06(){ 
+            var numeros = [4, 5, 8, 9, 10, 8, 1 , 2, 7];
+            
+            var soma = 0;
 
+            for (var i = 0; i < numeros.length; i++) {
+                soma += numeros[i];
+                document.write(soma)
+        }
+    }
+
+        function multiplicacao() {    
+            var x = prompt('um numero')
+            var y = prompt('outro numero')
+
+            document.write(x * y)
+        }
+
+        function atividade08(){ 
+            var numeros = [1, 3, 5, 7, 9];
+
+            function verificaNumeroNoArray(numero) {
+                if (numeros.includes(numero)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            let numeroParaVerificar = 5;
+            let resultado = verificaNumeroNoArray(numeroParaVerificar);
+
+            if (resultado) {
+                document.write(numeroParaVerificar + " está presente no array.");
+            } else {
+                document.write(numeroParaVerificar + " não está presente no array.");
+            }
+
+        }
+
+        function atividade09(){ 
+            for (let i = 1; i < 21; i++) {
+                document.write(i)
+                
+            }
+        }
 
         function selecionarOpcao(){ 
             const comBox = document.getElementById('minhaComBox');
@@ -92,7 +137,7 @@
                 break;
                 case 'opcao6': atividade06()
                 break;
-                case 'opcao7': atividade07()
+                case 'opcao7': multiplicacao()
                 break;
                 case 'opcao8': atividade08()
                 break;
