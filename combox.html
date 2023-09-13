@@ -1,95 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>combox </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Atividade</title>
 </head>
 <body>
     <h1>Selecione uma Opção</h1>
-        <select id="minhaComBox" onchange="selecionarOpcao()">
-            <option value="vazio"></option>
-            <option value="opcao1">Atividade 01</option>
-            <option value="opcao2">Atividade 02</option>
-            <option value="opcao3">Atividade 03</option>
-            <option value="opcao4">Atividade 04</option>
-            <option value="opcao5">Atividade 05</option>
-            <option value="opcao6">Atividade 06</option>
-            <option value="opcao7">Atividade 07</option>
-            <option value="opcao8">Atividade 08</option>
-            <option value="opcao9">Atividade 09</option>
-            <option value="opcao10">Atividade 10</option>
-            <option value="opcao11">Atividade 11</option>
-            <option value="opcao12">Atividade 12</option>
-            <option value="opcao13">Atividade 13</option>
-        </select>
+    <select id="minhaComBox" onchange="selecionarOpcao()">
+        <option value="vazio"></option>
+        <option value="opcao1">Atividade 01</option>
+        <option value="opcao2">Atividade 02</option>
+        <option value="opcao3">Atividade 03</option>
+        <option value="opcao4">Atividade 04</option>
+        <option value="opcao5">Atividade 05</option>
+        <option value="opcao6">Atividade 06</option>
+        <option value="opcao7">Atividade 07</option>
+        <option value="opcao8">Atividade 08</option>
+        <option value="opcao9">Atividade 09</option>
+        <option value="opcao10">Atividade 10</option>
+        <option value="opcao11">Atividade 11</option>
+        <option value="opcao12">Atividade 12</option>
+        <option value="opcao13">Atividade 13</option>
+        <option value="opcao14">Atividade 14</option>
+        <option value="opcao15">Atividade 15</option>
+        <option value="opcao16">Atividade 16</option>
+        <option value="opcao17">Atividade 17</option>
+    </select>
 
-        <script> 
-        
-        function imprimir(algo){    
+    <script>
+
+        function imprimir(algo) {
             console.log(algo)
             document.write(algo + "<br>")
         }
 
-        function atividade01(){   
+        function atividade01() {
             let nome = prompt('qual seu nome?')
-            imprimir('Olá, ' + nome) 
+            imprimir('Olá, ' + nome)
         }
 
-        function atividade02(){ 
+        function atividade02() {
             let idade = [16]
-            
-            if(idade > 17) {    
-                document.write(idade + ' idade você é de maior')
-            }else document.write(idade + ' de menor')
+
+            if (idade > 17) {
+                imprimir(idade + ' idade você é de maior')
+            } else imprimir(idade + ' de menor')
         }
 
-        function atividade03(){ 
+        function atividade03() {
             let numero = prompt('digite um numero')
 
-                if (numero % 2 == 0) { // SE CASO FOR PAR    
-                    document.write(numero + ' é par')
-                } else {
-                    document.write(numero + ' é impar')
-                }
+            if (numero % 2 == 0) { // SE CASO FOR PAR    
+                imprimir(numero + ' é par')
+            } else {
+                imprimir(numero + ' é impar')
             }
+        }
 
-        function atividade04(){    
+        function atividade04() {
             var frutas = ["banana, maça, manga, melancia"]
             for (let index = 0; index < frutas.length; index++) {
                 const fruta = frutas[index];
-                
+
                 imprimir(frutas)
             }
-    }
-
-        function atividade05(){ 
-            let a = parseInt (prompt('digite um numero'))   
-            let b = parseInt (prompt('digite outro numero'))
-
-            imprimir( a + b) 
         }
 
-        function atividade06(){ 
-            var numeros = [4, 5, 8, 9, 10, 8, 1 , 2, 7];
-            
+        function atividade05() {
+            let a = parseInt(prompt('digite um numero'))
+            let b = parseInt(prompt('digite outro numero'))
+
+            imprimir(a + b)
+        }
+
+        function atividade06() {
+            var numeros = [4, 5, 8, 9, 10, 8, 1, 2, 7];
+
             var soma = 0;
 
             for (var i = 0; i < numeros.length; i++) {
                 soma += numeros[i];
-                document.write(soma)
+                imprimir(soma)
+            }
         }
-    }
 
-        function multiplicacao() {    
+        function multiplicacao() {
             var x = prompt('um numero')
             var y = prompt('outro numero')
 
-            document.write(x * y)
+            imprimir(x * y)
         }
 
-        function atividade08(){ 
+        function atividade08() {
             var numeros = [1, 3, 5, 7, 9];
 
             function verificaNumeroNoArray(numero) {
@@ -104,57 +107,159 @@
             let resultado = verificaNumeroNoArray(numeroParaVerificar);
 
             if (resultado) {
-                document.write(numeroParaVerificar + " está presente no array.");
+                imprimir(numeroParaVerificar + " está presente no array.");
             } else {
-                document.write(numeroParaVerificar + " não está presente no array.");
+                imprimir(numeroParaVerificar + " não está presente no array.");
             }
 
         }
 
-        function atividade09(){ 
+        function atividade09() {
             for (let i = 1; i < 21; i++) {
-                document.write(i)
-                
+                imprimir(i)
+
             }
         }
 
-        function selecionarOpcao(){ 
+        function atividade10() {
+            for (let i = 1; i < 21; i++)
+                if (i % 2 == 0) {
+                    imprimir(i)
+                }
+        }
+
+        function atividade11() {
+            for (let i = 1; i < 21; i++)
+                if (i % 2 == 1) {
+                    imprimir(i)
+                }
+        }
+
+        function atividade12() {
+            let num = prompt('diga um numero')
+
+            if (num == 0) {
+                imprimir('numero igual a 0')
+            } else {
+                if (num > 0) {
+                    imprimir('numero maior que 0')
+                } else {
+                    imprimir('numero menor que 0')
+                }
+            }
+
+
+        }
+
+        function potencia() {       //atividade 13
+            let base = prompt('diga a base')
+            let poten = prompt('diga a potencia')
+
+            imprimir(base ** poten)
+        }
+
+        function atividade14() {
+            let numeros = [];
+
+            for (let index = 0; index < 5; index++) {
+                let numero = parseInt(prompt('digite um numero:'));
+                numeros.push(numero);
+            }
+
+            for (let index = numeros.length - 1; index >= 0; index--) {
+                imprimir(numeros[index]);
+            }
+
+        }
+
+        function atividade15() {
+            let numeros = [];
+
+            for (let index = 0; index < 5; index++) {
+                let numero = parseInt(prompt('digite um numero'));
+                numeros.push(numero);
+            }
+
+            function inverterNumero(numero) {
+                return parseInt(numero.toString().split('').reverse().join(''));  // string = dividir a string em caracteres sozinhos por isso esta sozinho
+            }                                                                     // reverse = inverte a ordem dos eletemnos em uma string
+                                                                          // join =  irá unir os elementos do array em uma única string sem espaços entre eles
+  
+            for (let index = 0; index < numeros.length; index++) {
+                let numeroInvertido = inverterNumero(numeros[index]);
+                imprimir(numeroInvertido);
+            }
+
+        }
+
+        function atividade16(){
+
+            let numeros = [];
+
+            for (let index = 0; index < 5; index++) {
+                let numero = parseInt(prompt('digite um numero'));
+                numeros.push(numero);
+            }
+
+            function inverterNumero(numero) {
+                return parseInt(numero.toString().split('').reverse().join(''));  // string = dividir a string em caracteres sozinhos por isso esta sozinho
+            }                                                                     // reverse = inverte a ordem dos eletemnos em uma string
+                                                                          // join =  irá unir os elementos do array em uma única string sem espaços entre eles
+  
+            for (let index = 0; index < numeros.length; index++){   
+                let numeroInvertido = inverterNumero(numeros[index]);
+                imprimir(numeroInvertido);
+            } 
+                
+
+            for (let i = 0; i < numerosInvertidos.length; i++) {
+            imprimir(numerosInvertidos[i]);
+        }
+    }
+        function selecionarOpcao() {
             const comBox = document.getElementById('minhaComBox');
             const opcaoSelecionada = comBox.value;
 
-            switch (opcaoSelecionada) { 
-                case 'opcao1': 
+            switch (opcaoSelecionada) {
+                case 'opcao1':
                     atividade01() // é uma função
                     break; //pare esse script
-                
-                case 'opcao2': atividade02() 
-                break;
+
+                case 'opcao2': atividade02()
+                    break;
                 case 'opcao3': atividade03()
-                break;
+                    break;
                 case 'opcao4': atividade04()
-                break;
+                    break;
                 case 'opcao5': atividade05()
-                break;
+                    break;
                 case 'opcao6': atividade06()
-                break;
+                    break;
                 case 'opcao7': multiplicacao()
-                break;
+                    break;
                 case 'opcao8': atividade08()
-                break;
+                    break;
                 case 'opcao9': atividade09()
-                break;
+                    break;
                 case 'opcao10': atividade10()
-                break;
+                    break;
                 case 'opcao11': atividade11()
-                break;
-                case 'opcao11': atividade12()
-                break;
+                    break;
+                case 'opcao12': atividade12()
+                    break;
+                case 'opcao13': potencia()
+                    break;
+                case 'opcao14': atividade14()
+                    break;
+                case 'opcao15': atividade15()
+                    break;
+                case 'opcao16': atividade16()
+                    break;
+                case 'opcao17': atividade17()
+                    break;
             }
         }
-        
-        
-        
-        
-        </script>
+
+    </script>
 </body>
 </html>
