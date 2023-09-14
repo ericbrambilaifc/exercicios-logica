@@ -7,7 +7,8 @@
   <meta name="author" content="Eric Brambila">
   <link rel="stylesheet" href="style.css">
   <title>Atividade</title>
-</head> 
+</head>
+
 <body>
   <h1>Selecione uma Opção</h1>
   <select id="minhaComBox" onchange="selecionarOpcao()">
@@ -31,7 +32,6 @@
     <option value="opcao17">Atividade 17</option>
   </select>
 
-
   <script>
     function imprimir(algo) {
       console.log(algo);
@@ -39,7 +39,6 @@
     }
 
     function atividade01() {
-      clear
       let nome = prompt("qual seu nome?");
       imprimir("Olá, " + nome);
     }
@@ -236,6 +235,7 @@
         soma.push(numeroOriginal[i] + numeroInvertido[i]);
       }
 
+      // Exibe os resultados em uma caixa de diálogo pop-up
       imprimir("numero original: " + numeroOriginal)
       imprimir("numero invertido: " + numeroInvertido)
       imprimir("Soma dos numeros: " + soma)
